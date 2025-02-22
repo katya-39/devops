@@ -29,7 +29,7 @@ pipeline {
             steps {
                 script {
                     currentBuild.displayName = "Numeric parameter is ${params.user_input}"
-                    echo currentBuild.displayName
+                    echo "${currentBuild.displayName}"
                 }
             }
         }
