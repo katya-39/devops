@@ -11,9 +11,9 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repository') {
+        stage('Checkout scm') {
             steps {
-                git "https://github.com/katya-39/devops.git"  // Replace with your repository URL
+                 checkout scm
             }
         }
         stage('Run Shell Script') {
