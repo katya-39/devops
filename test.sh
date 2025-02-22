@@ -6,6 +6,12 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
+# Check if parameter is a number
+if ! [[ $1 =~ ^[0-9]+$ ]]; then
+  echo "The parameter is not a number."
+  exit 1
+fi
+
 # Assign the parameter to a variable
 number=$1
 
