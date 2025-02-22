@@ -13,7 +13,6 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                credentialsId: 'a273d1b5-987b-4f0b-a580-ab667ded5b02',  // Replace with your credentials ID
                 git "https://github.com/katya-39/devops.git"  // Replace with your repository URL
             }
         }
