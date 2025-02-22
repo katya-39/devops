@@ -28,8 +28,8 @@ pipeline {
         stage('Display Parameter') {
             steps {
                 script {
-                    def currentBuild.displayName = "Numeric parameter is ${params.user_input}"
-                    echo "${currentBuild.displayName}"
+                    currentBuild.displayName = "Numeric parameter is ${params.user_input}"
+                    echo "Numeric parameter is ${params.user_input}"
                 }
             }
         }
